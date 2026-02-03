@@ -190,5 +190,3 @@ let myName = 'Sajib' ;
 if(myName === 'Sajib') {
     console.log('You are allowed')
 }
-
-
