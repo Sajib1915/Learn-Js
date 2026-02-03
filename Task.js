@@ -77,3 +77,4 @@ let number = 119; // ইনপুট সংখ্যা
 let remainder = number % 5; // % হলো modulo operator, যা remainder দেয়
 
 console.log(remainder);
+
