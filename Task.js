@@ -80,3 +80,52 @@ let remainder = number % 5; // % হলো modulo operator, যা remainder দ
 console.log(remainder);
 
 
+// ------------Task-4------
+/*
+What will be the result of the following codes:
+
+var a = isNaN(‘11’);
+
+var a = isNaN(2-10);
+
+Explain your answers.
+*/
+// 1️⃣
+var a = isNaN('11');
+/* কী হচ্ছে এখানে?
+'11' হলো string
+কিন্তু isNaN() আগে চেষ্টা করে এটাকে number এ convert করতে
+'11' → Number('11') = 11
+11 হলো valid number (NaN না)
+✅ Result
+Copy code
+Javascript
+false
+📌 কারণ: '11' দেখতে string হলেও এটা number বানানো যায়, তাই NaN নয়।
+
+*/
+
+// 2️⃣
+var a = isNaN(2 - 10);
+/*
+কী হচ্ছে এখানে?
+2 - 10 = -8
+-8 একটি valid number
+তাই এটা NaN না
+✅ Result
+Copy code
+Javascript
+false
+📌 কারণ: -8 সংখ্যাই, ভুল বা NaN কিছু না।
+🔑 এক লাইনে মনে রাখার কৌশল
+isNaN() চেক করে:
+👉 “এই জিনিসটা কি number হতে পারে না?”
+number হতে পারলে → false
+number না হলে → true
+উদাহরণ:
+Copy code
+Javascript
+isNaN('abc') // true
+isNaN('123') // false
+isNaN(undefined) // true
+*/
