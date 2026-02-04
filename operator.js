@@ -158,9 +158,9 @@ console.log(c) //0
 
 //* Conditional (Ternary) Operator
 
-var age = 20;
+var voterAgeExample = 20;
 
-if (age >= 18) {
+if (voterAgeExample >= 18) {
     console.log('You are eligible to vote');
 } else {
     console.log('You are not eligible to vote');
