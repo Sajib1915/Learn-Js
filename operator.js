@@ -340,7 +340,7 @@ else{
 
 //Example 1
 
-const voterAge = 112;             // ভোটারের বয়স 
+const voterAge = 20;             // ভোটারের বয়স 
 
 // normal if-else 
 // if (voterAge >= 18) {
@@ -351,6 +351,7 @@ const voterAge = 112;             // ভোটারের বয়স
 
 // simple ternary 
 voterAge >= 18 ? console.log('Vote Dio') : console.log('Ghumai thako');
+
 
 //Example 2
 
@@ -364,14 +365,14 @@ if (isLeader) {
 } else {
     ticketPrice = ticketPrice + 100; // নেতা না হলে +100
 }
-console.log('Pay amount (if-else):', ticketPrice);
+console.log('Pay amount(1) :', ticketPrice);
 
 // একই লজিক টার্নারি দিয়ে
-ticketPrice = isLeader ? 0 : ticketPrice + 100;
-console.log('Pay amount (ternary):', ticketPrice);
+ticketPrice = isLeader === true ? 0 : ticketPrice + 100;
+console.log('Pay amount(2) :', ticketPrice);
 
-// OPTIONAL: semi-advanced logic (বাংলা মন্তব্যসহ)
-if (isLeader) {
+// OPTIONAL: semi-advanced logic 
+if (isLeader === true) {
     if (ticketPrice > 1000) {
         ticketPrice = ticketPrice / 2; // দাম > 1000 হলে 50% কেটে দেওয়া হয়
     } else {
@@ -380,7 +381,7 @@ if (isLeader) {
 } else {
     ticketPrice = ticketPrice + 1000;  // নেতা না হলে +1000
 }
-console.log('Pay amount (semi-advanced):', ticketPrice);
+console.log('Pay amount(3) :', ticketPrice);
 
 // nested ternary (কমেন্ট করা রয়েছে — পড়তে সাবধান)
 // ticketPrice = isLeader ? (ticketPrice > 1000 ? ticketPrice / 2 : 0) : ticketPrice + 1000;
@@ -388,4 +389,4 @@ console.log('Pay amount (semi-advanced):', ticketPrice);
 ticketPrice = isLeader ? 
                 (ticketPrice > 1000 ? ticketPrice / 2 : 0) 
               : ticketPrice + 1000;
-console.log('Pay amount (nested ternary):', ticketPrice);
+console.log('Pay amount(4) :', ticketPrice);
