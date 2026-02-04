@@ -22,6 +22,7 @@ let returnMoney = totalMoney - cost;
 console.log(returnMoney)
 
 
+
 //*------Task 2-----
 /*
 Write a program to calculate the average marks of Mathematics, Biology, Chemistry, Physics, and Bangla of a student.
@@ -77,4 +78,5 @@ let number = 119; // ইনপুট সংখ্যা
 let remainder = number % 5; // % হলো modulo operator, যা remainder দেয়
 
 console.log(remainder);
+
 

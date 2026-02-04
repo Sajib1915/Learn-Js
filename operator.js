@@ -179,14 +179,213 @@ const salary = 25000;
 const isDevloper = true;
 
 if(salary > 2000 || isDevloper == true){
-    console.log('sho patro')
+    console.log('sho patro');
 }
 else{
-    console.log('onnopatro koji')
+    console.log('onnopatro koji');
 }
 
 let myName = 'Sajib' ;
 
 if(myName === 'Sajib') {
-    console.log('You are allowed')
+    console.log('You are allowed');
 }
+
+//!Repo Name - js-conditionals - Programming hero
+/**        1.(if.js)
+ * 
+ * if(condition) {
+ *      execute code if condition above is true
+ * }
+ * else {
+ *      execute code if the condition is false
+ * }
+*/
+
+var weight = 20;
+
+if(weight < 20){
+    console.log('I will carry it by myself');
+}
+else{
+    console.log('i will rent a rickshaw');
+}
+
+//? ---------- Multiple Js 2.(multiple.js) --------------
+const salaryCandidate = 21001;
+const isBCS = true;
+let height = 68;
+const hasCar = false;
+height = 71;
+
+
+// if(salaryCandidate > 20000 && height > 66){
+//     console.log('Su----patro');
+// }
+// else{
+//     console.log('onno patro khuji')
+// }
+
+if(salaryCandidate > 25000 || height > 72){
+    console.log('eso baba kobul');
+}
+else {
+    console.log('vaag tui mokbul')
+}
+
+
+// more and more condition
+// if(salaryCandidate > 25000 || height > 72 || isBCS){
+//     console.log('eso baba kobul');
+// }
+// else {
+//     console.log('vaag tui mokbul')
+// }
+
+if(salaryCandidate > 25000 && height > 72 && isBCS){
+    console.log('eso baba kobul');
+}
+else {
+    console.log('vaag tui mokbul')
+}
+
+// -----------------COMPLEX CONDITION--------------------
+if((salaryCandidate > 25000 && hasCar) || isBCS ){
+    console.log('tomar 14 gosti raji')
+}
+
+if((salaryCandidate > 25000 || hasCar) && isBCS ){
+    console.log('tomar 14 gosti raji')
+}
+
+/**
+ * MULTI_LEVEL CONDITION 3.(stepped.js)
+*/
+
+const price = 2000;
+
+if (price >= 5000) {
+    // 10% discount
+    const discount = price * 10 / 100;
+    const payAmount = price - discount;
+    console.log(payAmount);
+}
+else if (price > 2500) {
+    // 5% discount
+    const discount = price * 5 / 100;
+    const payAmount = price -discount;
+    console.log(payAmount)
+}
+else {
+    console.log(price);
+}
+
+//one Another 4.(restaurant.js)
+
+const age = 62;
+const mealPrice = 500;
+
+if (age <= 12) {
+    console.log('You can eat for free');
+}
+else if (age >= 60) {
+    // 50% discount
+    const discount = mealPrice * 50 / 100;
+    const payAmount = mealPrice - discount;
+    console.log(payAmount);
+}
+else if (age >= 50) {
+    // 25% discount
+    const discount = mealPrice * 25 / 100;
+    const payAmount = mealPrice - discount;
+    console.log(payAmount);
+}
+else if (age >= 40) {
+    // 10% discount
+    const discount = mealPrice * 10 / 100;
+    const payAmount = mealPrice - discount;
+    console.log(payAmount);
+}
+else {
+    console.log(mealPrice);
+}
+
+// -------Nested If-Else Condition 5.(nested.js)----
+const money = -10;
+if (money > 300) {
+    console.log('bro you are rich!!!');
+}
+else{
+    if(money > 100){
+        console.log('tui gorib o na boro lok o na')
+    }
+    else {
+        if (money > 0){
+            console.log('dosto kola kha.calcium bara')
+        }
+        else {
+            console.log('tui amar bondhu na. ')
+        }
+    }
+}
+
+/** (Advanced)If-else 
+ *
+ * TERNARY --> three parts
+ * 
+ *   ?    :
+ * 
+ *  condition ? do something when true : do something when false
+*/
+
+//Example 1
+
+const voterAge = 112;             // ভোটারের বয়স 
+
+// normal if-else 
+// if (voterAge >= 18) {
+//     console.log('Vote Dio');
+// } else {
+//     console.log('Ghumai thako');
+// }
+
+// simple ternary 
+voterAge >= 18 ? console.log('Vote Dio') : console.log('Ghumai thako');
+
+//Example 2
+
+let ticketPrice = 500;            
+
+const isLeader = false;          
+
+// সাধারণ if-else: নেতা হলে ফ্রি, না হলে +100
+if (isLeader) {
+    ticketPrice = 0;            // নেতা হলে ভাড়া = 0
+} else {
+    ticketPrice = ticketPrice + 100; // নেতা না হলে +100
+}
+console.log('Pay amount (if-else):', ticketPrice);
+
+// একই লজিক টার্নারি দিয়ে
+ticketPrice = isLeader ? 0 : ticketPrice + 100;
+console.log('Pay amount (ternary):', ticketPrice);
+
+// OPTIONAL: semi-advanced logic (বাংলা মন্তব্যসহ)
+if (isLeader) {
+    if (ticketPrice > 1000) {
+        ticketPrice = ticketPrice / 2; // দাম > 1000 হলে 50% কেটে দেওয়া হয়
+    } else {
+        ticketPrice = 0;               // নয়তো ভাড়া = 0
+    }
+} else {
+    ticketPrice = ticketPrice + 1000;  // নেতা না হলে +1000
+}
+console.log('Pay amount (semi-advanced):', ticketPrice);
+
+// nested ternary (কমেন্ট করা রয়েছে — পড়তে সাবধান)
+// ticketPrice = isLeader ? (ticketPrice > 1000 ? ticketPrice / 2 : 0) : ticketPrice + 1000;
+
+ticketPrice = isLeader ? 
+                (ticketPrice > 1000 ? ticketPrice / 2 : 0) 
+              : ticketPrice + 1000;
+console.log('Pay amount (nested ternary):', ticketPrice);
