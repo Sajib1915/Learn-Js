@@ -387,15 +387,15 @@ console.log('Pay amount(3) :', ticketPrice);
 // ticketPrice = isLeader ? (ticketPrice > 1000 ? ticketPrice / 2 : 0) : ticketPrice + 1000;
 
 ticketPrice = isLeader ? 
-                (ticketPrice > 1000 ? ticketPrice / 2 : 0) 
+    (ticketPrice > 1000 ? ticketPrice / 2 : 0) 
               : ticketPrice + 1000;
 console.log('Pay amount(4) :', ticketPrice);
 
 
 //------- Logical Not Operator ----------
-const isLeader1 = true;
+const isLeaderFlag = true;
 // if(isLeader === true)
-if(isLeader1){
+if(isLeaderFlag){
     console.log('leader asche! chair charo');
 }
 else{
