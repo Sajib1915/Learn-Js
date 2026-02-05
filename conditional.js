@@ -30,7 +30,7 @@ if (isLeader === true) {
 }
 console.log('Pay amount(3) :', ticketPrice);
 
-// nested ternary (কমেন্ট করা রয়েছে — পড়তে সাবধান)
+// nested ternary 
 // ticketPrice = isLeader ? (ticketPrice > 1000 ? ticketPrice / 2 : 0) : ticketPrice + 1000;
 
 ticketPrice = isLeader ? 

@@ -390,3 +390,38 @@ ticketPrice = isLeader ?
                 (ticketPrice > 1000 ? ticketPrice / 2 : 0) 
               : ticketPrice + 1000;
 console.log('Pay amount(4) :', ticketPrice);
+
+
+//------- Logical Not Operator ----------
+const isLeader1 = true;
+// if(isLeader === true)
+if(isLeader1){
+    console.log('leader asche! chair charo');
+}
+else{
+    console.log('vitore dukte dibi na');
+}
+
+// Demonstrate NOT operator with both boolean values
+const isPassedTrue = true; // example where value is true
+// if(isPassed === false)
+if(!isPassedTrue){
+    console.log('toke biya diya dimu'); // won't run because !true === false
+}
+else {
+    console.log('tumi amader noyon er moni'); // runs
+}
+
+const isPassedFalse = false; // example where value is false
+if(!isPassedFalse){
+    console.log('toke biya diya dimu'); // runs because !false === true
+}
+else {
+    console.log('tumi amader noyon er moni');
+}
+
+// Same logic using a ternary
+const isPassed = false;
+console.log(!isPassed ? 'toke biya diya dimu' : 'tumi amader noyon er moni');
+
+
